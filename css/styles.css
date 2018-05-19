@@ -1,0 +1,144 @@
+.wrapper {
+	text-align: center;
+}
+.header {
+	background-attachment: scroll,							scroll,					fixed;
+	background-image: url("images/top-3200.svg"), url("images/overlay.png");
+	background-position: bottom center,					top left,				center center;
+	background-repeat: repeat-x,						repeat,					no-repeat;
+	background-size: 3200px 260px,					auto,					cover;
+	color: rgba(255, 255, 255, 0.8);
+	padding: 2em 0 2em 0;
+	position: relative;
+	text-align: center;
+}
+.header:before, .header:after {
+	background: rgba(224, 224, 224, 0.75);
+	content: '';
+	left: 50%;
+	position: absolute;
+	width: 1px;
+	z-index: 0;
+}
+.header:before {
+	height: calc(100% - 50px);
+	opacity: 0.15;
+	top: 0;
+}
+
+.header:after {
+	bottom: 0;
+	height: 50px;
+}
+button {
+	padding: 5px 10px;
+	margin: 10px;
+	width: 20%;
+	line-height: 3rem;
+	background: #FFE4B5;
+	color: #800080;
+	border-radius: 10px;
+	font-size: 3rem;
+}
+h2 {
+	padding-top: 0.7%;
+	font-size: 5em;
+	font-weight: bold;
+	color: #fff;
+}
+#size {
+	padding-top: 15px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+}
+h1 {
+	font-size: 5em;
+	font-weight: bold;
+	color: #000080;
+	transition: 0.3s all linear;
+	z-index: 2;
+}
+#content {
+	text-align: center;
+}
+.rows {
+	margin: 0 auto ;
+}
+.column {
+  display: inline-block;
+   background-size: cover;
+  border-radius: 5px;
+	margin: 3px;
+	overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid #000;
+	background: #f0b7a1; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f0b7a1 0%, #8c3310 33%, #bf6e4e 47%, #bf6e4e 51%, #8c3310 65%, #8c3310 65%, #752201 67%, #f0b7a1 90%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #f0b7a1 0%,#8c3310 33%,#bf6e4e 47%,#bf6e4e 51%,#8c3310 65%,#8c3310 65%,#752201 67%,#f0b7a1 90%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f0b7a1 0%,#8c3310 33%,#bf6e4e 47%,#bf6e4e 51%,#8c3310 65%,#8c3310 65%,#752201 67%,#f0b7a1 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#f0b7a1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+img:hover {
+  cursor: pointer;
+}
+img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  opacity: 0;
+}
+.show {
+	transform-style: preserve-3d;
+	transition: 0.3s linear all;
+	transform: rotateY(180deg);
+	opacity: 1;
+}
+#clock {
+	background-color: #8B0000;
+  width: 100px;
+  line-height: 40px;
+  margin: 2% auto 4% auto;
+  font-size: 20px;
+  color: #FFE4C4;
+  border: 2px solid #FFE4C4;
+  border-radius: 5px;
+}
+.login {
+  opacity: 1;
+  width: 400px;
+  height: 200px;
+  border: 10px solid #000;
+  border-radius: 5px;
+  position: fixed;
+  top: 40%;
+  left:  calc(50% - 200px);;
+  z-index: 9000;
+  background-color: #cecece;
+}
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+.login p {
+  margin: 5%;
+  font-size: 20px;
+}
